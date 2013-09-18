@@ -90,6 +90,41 @@
             "region": ["de", "eu"],
             "type": ["literature"]
         },
+        {
+           "address": "ejls.eu/",
+            "region": ["eu"],
+            "type": ["literature"]
+        },
+        {
+           "address": "ejlt.eu",
+            "region": ["eu"],
+            "type": ["literature"]
+        },
+        {
+           "address": "internet4jurists.at",
+            "region": ["at],
+            "type": ["literature"]
+        },
+        {
+           "address": "warwick.ac.at/fac/soc/law/elj",
+            "region": ["uk"],
+            "type": ["literature"]
+        },
+        {
+           "address": "ejcl.org",
+            "region": ["eu", "nl"],
+            "type": ["literature"]
+        },
+        {
+           "address": "amsterdamlawforum.org",
+            "region": ["nl"],
+            "type": ["literature"]
+        },
+        {
+           "address": "it-law.at/papers",
+            "region": ["at],
+            "type": ["literature"]
+        },
          {
            "address": "gojil.eu",
             "region": ["de", "eu"],
