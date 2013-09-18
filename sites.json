@@ -39,6 +39,21 @@
             "address": "curia.europa.eu",
             "region": ["eu"],
             "type": ["case_law"]
-        }
+        },
+        {
+            "address": "legislation.gov.uk",
+            "region": ["uk"],
+            "type": ["legislation"]
+        },
+        {
+           "address": "legislation.gov.uk",
+            "region": ["uk"],
+            "type": ["legislation"]
+        },
+        {
+            "address": "diepresse.com/home/recht",
+            "region": ["at"],
+            "type": ["literature"]
+        },
     ]
 }
