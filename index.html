@@ -95,8 +95,22 @@
                             </label>
                         </div>
 
-                        <h5>Domains</h5>
-                        <ul id="domain" class="list-unstyled">
+                        <h5>File Type</h5>
+                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                            <label class="btn btn-default">
+                                <input name="filetype" value="pdf" type="checkbox" /> PDF
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="filetype" value="rtf" type="checkbox" /> RTF
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="filetype" value="doc" type="checkbox" /> Word
+                            </label>
+                        </div>
+
+                        <h5>Websites</h5>
+                        <ul id="address" class="list-unstyled">
+                            <li>-</li>
                         </ul>
                     </div>
                     
@@ -157,6 +171,9 @@
                 
                 var domains = $.map(matches, function (site) {
                     return 'site:' + site.domain; 
+                var filetypes = [];
+                $('input[name="filetype"]:checked').each(function() {
+                    filetypes.push('filetype:' + $(this).val());
                 });
                 
                 var element = google.search.cse.element.getElement('open-law-search');
