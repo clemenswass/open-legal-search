@@ -6,7 +6,7 @@
             "type": ["case_law"]
         },
         {
-            "adress":"gesetze-im-internet.de",
+            "address":"gesetze-im-internet.de",
             "region": ["de"],
             "type": ["legislation"]
         },
@@ -26,17 +26,17 @@
             "type": ["legislation"]
         },
         {
-            "adress": "bger.ch",
+            "address": "bger.ch",
             "region": ["ch"],
             "type": ["case_law"]
         },
         {
-            "adress": "eur-lex.europa.eu",
+            "address": "eur-lex.europa.eu",
             "region": ["eu"],
             "type": ["legislation"]
         },
         {
-            "adress": "curia.europa.eu",
+            "address": "curia.europa.eu",
             "region": ["eu"],
             "type": ["case_law"]
         }
