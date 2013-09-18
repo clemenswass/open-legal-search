@@ -2,133 +2,185 @@
     "sites": [
         {
             "address": "bundesverfassungsgericht.de",
-            "region": ["de"],
-            "type": ["case_law"]
+            "regions": ["Germany"],
+            "types": ["Case Law"],
+            "tags": ["IT Law", "Open Data", "Open Access"],
+            "languages": ["German", "English"]
         },
         {
             "address":"gesetze-im-internet.de",
-            "region": ["de"],
-            "type": ["legislation"]
+            "regions": ["Germany"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "ris.bka.gv.at",
-            "region": ["at"],
-            "type": ["legislation"]
+            "regions": ["Austria"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "vwgh.gv.at ",
-            "region": ["at"],
-            "type": ["case_law"]
+            "regions": ["Austria"],
+            "types": ["Case Law"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "admin.ch/opc",
-            "region": ["ch"],
-            "type": ["legislation"]
+            "regions": ["Switzerland"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "bger.ch",
-            "region": ["ch"],
-            "type": ["case_law"]
+            "regions": ["Switzerland"],
+            "types": ["Case Law"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "eur-lex.europa.eu",
-            "region": ["eu"],
-            "type": ["legislation"]
+            "regions": ["EU"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "curia.europa.eu",
-            "region": ["eu"],
-            "type": ["case_law"]
+            "regions": ["EU"],
+            "types": ["Case Law"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
             "address": "legislation.gov.uk",
-            "region": ["uk"],
-            "type": ["legislation"]
+            "regions": ["UK"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "bailii.org",
-            "region": ["uk"],
-            "type": ["case_law"]
+            "regions": ["UK"],
+            "types": ["Case Law"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
             "address": "eurolawyer.at",
-            "region": ["at"],
-            "type": ["literature"]
+            "regions": ["Austria"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["German"]
         },
         {
            "address": "zis-online.com",
-            "region": ["de"],
-            "type": ["literature"]
+            "regions": ["Germany"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
          {
            "address": "ouulj.law.ox.ac.uk",
-            "region": ["uk"],
-            "type": ["literature"]
+            "regions": ["UK"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
          {
            "address": "mdpi.com/journal/laws",
-            "region": ["ch"],
-            "type": ["literature"]
+            "regions": ["Switzerland"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["German"]
         },
          {
            "address": "jurpc.de",
-            "region": ["de"],
-            "type": ["literature"]
+            "regions": ["Germany"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["German"]
         },
          {
            "address": "jipitec.eu/issues",
-            "region": ["eu"],
-            "type": ["literature"]
+            "regions": ["EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
          {
            "address": "ifosslr.org/ifosslr/issue/archive",
-            "region": ["eu"],
-            "type": ["literature"]
+            "regions": ["EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
          {
            "address": "hrr-strafrecht.de/hrr/archiv",
-            "region": ["de", "eu"],
-            "type": ["literature"]
+            "regions": ["Germany", "EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "ejls.eu/",
-            "region": ["eu"],
-            "type": ["literature"]
+            "regions": ["EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "ejlt.org",
-            "region": ["eu"],
-            "type": ["literature"]
+            "regions": ["EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "internet4jurists.at",
-            "region": ["at"],
-            "type": ["literature"]
+            "regions": ["Austria"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "warwick.ac.at/fac/soc/law/elj",
-            "region": ["uk"],
-            "type": ["literature"]
+            "regions": ["UK"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "ejcl.org",
-            "region": ["eu", "nl"],
-            "type": ["literature"]
+            "regions": ["EU", "Netherlands"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "amsterdamlawforum.org",
-            "region": ["nl"],
-            "type": ["literature"]
+            "regions": ["Netherlands"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         },
         {
            "address": "it-law.at/papers",
-            "region": ["at"],
-            "type": ["literature"]
+            "regions": ["Austria"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["German"]
         },
          {
            "address": "gojil.eu",
-            "region": ["de", "eu"],
-            "type": ["literature"]
+            "regions": ["Germany", "EU"],
+            "types": ["Literature"],
+            "tags": [],
+            "languages": ["English"]
         }
     ]
 }

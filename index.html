@@ -74,35 +74,11 @@
                 <div class="row">
                     <div class="col-sm-2 facets">
                         <h5>Regions</h5>
-                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input name="region" value="eu" type="checkbox" /> EU
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="region" value="de" type="checkbox" /> Germany
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="region" value="at" type="checkbox" /> Austria
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="region" value="ch" type="checkbox" /> Switzerland
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="region" value="uk" type="checkbox" /> UK
-                            </label>
+                        <div id="regions" class="btn-group btn-group-vertical" data-toggle="buttons">
                         </div>
                         
                         <h5>Type</h5>
-                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input name="type" value="case_law" type="checkbox" /> Case Law
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="type" value="legislation" type="checkbox" /> Legislation
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="type" value="literature" type="checkbox" /> Literature
-                            </label>
+                        <div id="types" class="btn-group btn-group-vertical" data-toggle="buttons">
                         </div>
 
                         <h5>File Type</h5>
@@ -117,7 +93,11 @@
                                 <input name="filetype" value="doc" type="checkbox" /> Word
                             </label>
                         </div>
-
+                        
+                        <h5>Tags</h5>
+                        <div id="tags" class="btn-group btn-group-vertical" data-toggle="buttons">
+                        </div>
+                        
                         <h5>Websites</h5>
                         <ul id="address" class="list-unstyled">
                             <li>-</li>
@@ -140,8 +120,8 @@
             function filter() {
 
                 var filters = [
-                    'region',
-                    'type'
+                    'regions',
+                    'types'
                 ];
 
                 var values = {};
@@ -193,13 +173,48 @@
                 
                 $('#address').empty();
                 $.each(matches, function (i, site) {
-                    $('#address').append('<li>' + site.address + '</li>');
+                    $('#address').append('<li class="checkbox"><label><input type="checkbox"> ' + site.address + '</label></li>');
                 });
+            }
+            
+            function addFilterElement(id, label) {
+                $('#' + id).append('<label class="btn btn-default"><input name="' + id + '" type="checkbox" value="' + label + '"> ' + label + '</label>');
+                //$('#' + id).append('<li class="checkbox"><label><input name="' + id + '" type="checkbox" value="' + label + '"> ' + label + '</label></li>');
             }
             
             $(function () { 
                 $.getJSON('sites.json', function(json) {
                     sites = json.sites;
+                    
+                    var regions = {};
+                    $.each(sites, function (i, site) {
+                        $.each(site.regions, function (j, region) {
+                            regions[region] = 1;
+                        });
+                    });
+                    $.each(regions, function (region) {
+                        addFilterElement('regions', region);
+                    });
+                    
+                    var types = {};
+                    $.each(sites, function (i, site) {
+                        $.each(site.types, function (j, type) {
+                            types[type] = 1;
+                        });
+                    });
+                    $.each(types, function (type) {
+                        addFilterElement('types', type);
+                    });
+
+                    var tags = {};
+                    $.each(sites, function (i, site) {
+                        $.each(site.tags, function (j, tag) {
+                            tags[tag] = 1;
+                        });
+                    });
+                    $.each(tags, function (tag) {
+                        addFilterElement('tags', tag);
+                    });
                 });
             });
             
