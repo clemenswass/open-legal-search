@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Open Law Search</title>
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
         <style>
             
         .header {
@@ -58,40 +58,38 @@
                 
                 <div class="row">
                     <div class="col-lg-2 facets">
-                        <h5>Country</h5>
+                        <h5>Regions</h5>
                         <div class="btn-group btn-group-vertical" data-toggle="buttons">
-                            <label class="btn btn-default active">
-                                <input name="country" id="country_all" type="radio" checked="checked" /> All
+                            <label class="btn btn-default">
+                                <input name="region" value="eu" type="checkbox" /> Europe Union
                             </label>
                             <label class="btn btn-default">
-                                <input name="country" id="country_eu" type="radio" /> Europe Union
+                                <input name="region" value="de" type="checkbox" /> Germany
                             </label>
                             <label class="btn btn-default">
-                                <input name="country" id="country_de" type="radio" /> Germany
+                                <input name="region" value="at" type="checkbox" /> Austria
                             </label>
                             <label class="btn btn-default">
-                                <input name="country" id="country_at" type="radio" /> Austria
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="country" id="country_ch" type="radio" /> Switzerland
+                                <input name="region" value="ch" type="checkbox" /> Switzerland
                             </label>
                         </div>
                         
                         <h5>Type</h5>
                         <div class="btn-group btn-group-vertical" data-toggle="buttons">
-                            <label class="btn btn-default active">
-                                <input name="type" id="type_all" type="radio" checked="checked" /> All
+                            <label class="btn btn-default">
+                                <input name="type" value="case_law" type="checkbox" /> Case Law
                             </label>
                             <label class="btn btn-default">
-                                <input name="type" id="type_case_law" type="radio" /> Case Law
+                                <input name="type" value="legislation" type="checkbox" /> Legislation
                             </label>
                             <label class="btn btn-default">
-                                <input name="type" id="type_legislation" type="radio" /> Legislation
-                            </label>
-                            <label class="btn btn-default">
-                                <input name="type" id="type_literature" type="radio" /> Literature
+                                <input name="type" value="literature" type="checkbox" /> Literature
                             </label>
                         </div>
+
+                        <h5>Domains</h5>
+                        <ul id="domain" class="list-unstyled">
+                        </ul>
                     </div>
                     
                     <div class="col-lg-10">
@@ -102,39 +100,64 @@
             </div>
         </div>
 
-        <script src="//code.jquery.com/jquery.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
             var sites = [];
             
             function filter() {
 
-                var values = [
-                    'country_eu',
-                    'country_de',
-                    'country_at',
-                    'country_ch',
-                    'type_legislation',
-                    'type_case_law',
-                    'type_literature'
+                var filters = [
+                    'region',
+                    'type'
                 ];
 
-                var domains = $.map(sites, function(site) {
-                    var all = true;
-                    $.each(values, function (i, value) {
-                        var checked = $('#' + value).get(0).checked;
-                        if (checked && $.inArray(value, site.tags) === -1) {
-                            return all = false;
-                        }
+                var values = {};
+
+                $.each(filters, function (i, name) {
+
+                    var vals = [];
+                    $('input[name="' + name + '"]:checked').each(function() {
+                        vals.push($(this).val());
                     });
-                    if (all) {
-                        return 'site:' + site.domain;
+
+                    if (vals.length > 0) {
+                        values[name] = vals;
                     }
-                    return;
                 });
 
+                var matches = $.grep(sites, function(site) {
+
+                    var all = true;
+                    $.each(values, function (filter, vals) {
+                        var match = false;
+                        $.each(site[filter], function (i, value) {
+                            if ($.inArray(value, vals) !== -1) {
+                                match = true;
+                                return false;
+                            }
+                        });
+                        if (!match) {
+                            all = false;
+                        }
+                    });
+                    
+                    return all;
+                });
+                
+                console.log(matches);
+                
+                var domains = $.map(matches, function (site) {
+                    return 'site:' + site.domain; 
+                });
+                
                 var element = google.search.cse.element.getElement('open-law-search');
                 element.execute($('#query').val() + ' ' + domains.join(' OR '));
+                
+                $('#domain').empty();
+                $.each(matches, function (i, site) {
+                    $('#domain').append('<li>' + site.domain + '</li>');
+                });
             }
             
             $(function () { 
@@ -146,7 +169,7 @@
             window.__gcse = {
                 callback: function () {
 
-                    $('input:radio').change(function () {
+                    $('input:checkbox').change(function () {
                         filter();
                     });
 

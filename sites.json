@@ -2,32 +2,23 @@
     "sites": [
         {
             "domain": "bundesverfassungsgericht.de",
-            "tags": [
-                "country_de",
-                "type_case_law"
-            ]
+            "region": ["de"],
+            "type": ["case_law"]
         },
         {
             "domain": "ris.bka.gv.at",
-            "tags": [
-                "country_at",
-                "type_legislation"
-            ]
+            "region": ["at"],
+            "type": ["legislation"]
         },
         {
             "domain": "vwgh.gv.at ",
-            "tags": [
-                "country_at",
-                "type_case_law"
-            ]
+            "region": ["at"],
+            "type": ["case_law"]
         },
         {
             "domain": "admin.ch/opc",
-            "tags": [
-                "country_ch",
-                "type_legislation"
-            ]
-            
+            "region": ["ch"],
+            "type": ["legislation"]
         }
     ]
 }
