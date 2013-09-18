@@ -1,7 +1,7 @@
 {
     "sites": [
          {
-            "label": "eur-lex.europa.eu",
+            "label": "EUR-Lex",
             "address": "eur-lex.europa.eu",
             "regions": ["EU"],
             "types": ["Legislation"],
@@ -9,7 +9,7 @@
             "languages": ["German"]
         },
         {
-            "label": "curia.europa.eu",
+            "label": "Curia",
             "address": "curia.europa.eu",
             "regions": ["EU"],
             "types": ["Case Law"],
@@ -17,15 +17,15 @@
             "languages": ["German"]
         },
         {
-            "label": "bundesverfassungsgericht.de",
+            "label": "BVG Deutschland",
             "address": "bundesverfassungsgericht.de",
             "regions": ["Germany"],
             "types": ["Case Law"],
-            "tags": ["IT Law", "Open Data", "Open Access"],
+            "tags": [],
             "languages": ["German", "English"]
         },
         {
-            "label": "gesetze-im-internet.de",
+            "label": "Deutsche Gesetze",
             "address":"gesetze-im-internet.de",
             "regions": ["Germany"],
             "types": ["Legislation"],
@@ -33,7 +33,7 @@
             "languages": ["German"]
         },
         {
-            "label": "ris.bka.gv.at",
+            "label": "RIS",
             "address": "ris.bka.gv.at",
             "regions": ["Austria"],
             "types": ["Legislation"],
@@ -41,7 +41,7 @@
             "languages": ["German"]
         },
         {
-            "label": "vwgh.gv.at",
+            "label": "VwGH",
             "address": "vwgh.gv.at ",
             "regions": ["Austria"],
             "types": ["Case Law"],
@@ -49,7 +49,7 @@
             "languages": ["German"]
         },
         {
-            "label": "admin.ch",
+            "label": "SR",
             "address": "admin.ch/opc",
             "regions": ["Switzerland"],
             "types": ["Legislation"],
@@ -57,7 +57,7 @@
             "languages": ["German"]
         },
         {
-            "label": "bger.ch",
+            "label": "BGER",
             "address": "bger.ch",
             "regions": ["Switzerland"],
             "types": ["Case Law"],
@@ -105,7 +105,7 @@
             "languages": ["English"]
         },
          {
-           "label": "mdpi.com/journal/laws",
+           "label": "mdpi.com",
              "address": "mdpi.com/journal/laws",
             "regions": ["Switzerland"],
             "types": ["Literature"],
