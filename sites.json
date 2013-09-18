@@ -46,9 +46,9 @@
             "type": ["legislation"]
         },
         {
-           "address": "legislation.gov.uk",
+           "address": "bailii.org",
             "region": ["uk"],
-            "type": ["legislation"]
+            "type": ["case_law"]
         },
         {
             "address": "diepresse.com/home/recht",
