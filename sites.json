@@ -1,5 +1,21 @@
 {
     "sites": [
+         {
+            "label": "eur-lex.europa.eu",
+            "address": "eur-lex.europa.eu",
+            "regions": ["EU"],
+            "types": ["Legislation"],
+            "tags": [],
+            "languages": ["German"]
+        },
+        {
+            "label": "curia.europa.eu",
+            "address": "curia.europa.eu",
+            "regions": ["EU"],
+            "types": ["Case Law"],
+            "tags": [],
+            "languages": ["German"]
+        },
         {
             "label": "bundesverfassungsgericht.de",
             "address": "bundesverfassungsgericht.de",
@@ -44,22 +60,6 @@
             "label": "bger.ch",
             "address": "bger.ch",
             "regions": ["Switzerland"],
-            "types": ["Case Law"],
-            "tags": [],
-            "languages": ["German"]
-        },
-        {
-            "label": "eur-lex.europa.eu",
-            "address": "eur-lex.europa.eu",
-            "regions": ["EU"],
-            "types": ["Legislation"],
-            "tags": [],
-            "languages": ["German"]
-        },
-        {
-            "label": "curia.europa.eu",
-            "address": "curia.europa.eu",
-            "regions": ["EU"],
             "types": ["Case Law"],
             "tags": [],
             "languages": ["German"]
