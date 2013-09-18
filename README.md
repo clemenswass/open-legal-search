@@ -9,11 +9,11 @@ Developed at the Open Data [Law Mining Hackathon](http://make.opendata.ch/legal/
 Todo
 ----
 
-- [x] Filter by File Type (PDF, DOC, RTF, HTML)
-- [x] Suchhilfe mit Tags
-- [x] Name for Domain
-- [ ] Language
-- [x] Dynamic Regions/Types
-- [ ] Filter for Websites
-- [ ] Bookmarkable Search
-- [ ] Open/Close for Filters
+- ~~Filter by File Type (PDF, DOC, RTF, HTML)~~
+- ~~Suchhilfe mit Tags~~
+- ~~Name for Domain~~
+- Language
+- ~~Dynamic Regions/Types~~
+- Filter for Websites
+- Bookmarkable Search
+- Open/Close for Filters
