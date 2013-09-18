@@ -85,7 +85,7 @@
             "address": "eurolawyer.at",
             "regions": ["Austria"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law"],
             "languages": ["German"]
         },
         {
@@ -117,7 +117,7 @@
            "address": "jurpc.de",
             "regions": ["Germany"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law", "IP Law"],
             "languages": ["German"]
         },
          {
@@ -125,7 +125,7 @@
            "address": "jipitec.eu/issues",
             "regions": ["EU"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law", "IP Law"],
             "languages": ["English"]
         },
          {
@@ -141,7 +141,7 @@
            "address": "hrr-strafrecht.de/hrr/archiv",
             "regions": ["Germany", "EU"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["Criminal Law"],
             "languages": ["English"]
         },
         {
@@ -157,7 +157,7 @@
            "address": "ejlt.org",
             "regions": ["EU"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law"],
             "languages": ["English"]
         },
         {
@@ -165,12 +165,12 @@
            "address": "internet4jurists.at",
             "regions": ["Austria"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law"],
             "languages": ["English"]
         },
         {
-           "label": "warwick.ac.at",
-           "address": "warwick.ac.at/fac/soc/law/elj",
+           "label": "warwick.ac.uk",
+           "address": "warwick.ac.uk/fac/soc/law/elj",
             "regions": ["UK"],
             "types": ["Literature"],
             "tags": [],
@@ -181,7 +181,7 @@
            "address": "ejcl.org",
             "regions": ["EU", "Netherlands"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["Comparative Law"],
             "languages": ["English"]
         },
         {
@@ -197,7 +197,7 @@
            "address": "it-law.at/papers",
             "regions": ["Austria"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law"],
             "languages": ["German"]
         },
          {
@@ -205,7 +205,7 @@
            "address": "gojil.eu",
             "regions": ["Germany", "EU"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["International Law"],
             "languages": ["English"]
         }
     ]
