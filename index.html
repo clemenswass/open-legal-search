@@ -57,7 +57,7 @@
                         <h3>Open Law Search</h3>
                     </div>
                     <div class="col-lg-6 form-query">
-                        <input name="query" id="query" type="text" class="form-control">
+                        <input name="query" id="query" type="text" class="form-control" autofocus="autofocus" value="Product Liability">
                     </div>
                     <div class="col-lg-4 form-query">
                         <button onclick="filter()" class="btn btn-primary">Search</button>
@@ -185,6 +185,8 @@
                         filter();
                         return false;
                     });
+                    
+                    filter();
                 }
             };
         </script>
