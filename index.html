@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Open Law Search</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <style>
+            
+        .header {
+            margin-top: 45px;
+        }
+        
+        .header h3 {
+            margin-top: 0;
+        }
+        
+        .header .form-query {
+            padding-top: 15px;
+        }
+            
+        .facets h5 {
+            margin-top: 20px;
+        }
+        
+        .facets .btn {
+            text-align: left;
+        }
+        
+        .facets .btn-group, .btn-group-vertical {
+            display: block;
+        }
+        
+        .facets .btn.active {
+            color: #FFF;
+            background-color: #428BCA;
+            border-color: #357EBD;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <form id="form-search" onsubmit="return false;">
+                
+                <div class="row header">
+                    <div class="col-lg-2">
+                        <h3>Open Law Search</h3>
+                    </div>
+                    <div class="col-lg-6 form-query">
+                        <input name="query" id="query" type="text" class="form-control">
+                    </div>
+                    <div class="col-lg-4 form-query">
+                        <button onclick="filter()" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-2 facets">
+                        <h5>Country</h5>
+                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input name="country" id="country_all" type="radio" checked="checked" /> All
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="country" id="country_eu" type="radio" /> Europe Union
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="country" id="country_de" type="radio" /> Germany
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="country" id="country_at" type="radio" /> Austria
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="country" id="country_ch" type="radio" /> Switzerland
+                            </label>
+                        </div>
+                        
+                        <h5>Type</h5>
+                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input name="type" id="type_all" type="radio" checked="checked" /> All
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="type" id="type_case_law" type="radio" /> Case Law
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="type" id="type_legislation" type="radio" /> Legislation
+                            </label>
+                            <label class="btn btn-default">
+                                <input name="type" id="type_literature" type="radio" /> Literature
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-10">
+                        <gcse:searchresults-only gname="open-law-search"></gcse:searchresults-only>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script>
+            var sites = [];
+            
+            function filter() {
+
+                var values = [
+                    'country_eu',
+                    'country_de',
+                    'country_at',
+                    'country_ch',
+                    'type_legislation',
+                    'type_case_law',
+                    'type_literature'
+                ];
+
+                var domains = $.map(sites, function(site) {
+                    var all = true;
+                    $.each(values, function (i, value) {
+                        var checked = $('#' + value).get(0).checked;
+                        if (checked && $.inArray(value, site.tags) === -1) {
+                            return all = false;
+                        }
+                    });
+                    if (all) {
+                        return 'site:' + site.domain;
+                    }
+                    return;
+                });
+
+                var element = google.search.cse.element.getElement('open-law-search');
+                element.execute($('#query').val() + ' ' + domains.join(' OR '));
+            }
+            
+            $(function () { 
+                $.getJSON('sites.json', function(json) {
+                    sites = json.sites;
+                });
+            });
+            
+            window.__gcse = {
+                callback: function () {
+
+                    $('input:radio').change(function () {
+                        filter();
+                    });
+
+                    $('#form-search').submit(function () {
+                        filter();
+                        return false;
+                    });
+                }
+            };
+        </script>
+        <script>
+          (function() {
+            var cx = '015617536823326722239:iiz8slfbmua';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+    </body>
+</html>
