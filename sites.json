@@ -1,6 +1,7 @@
 {
     "sites": [
         {
+            "label": "bundesverfassungsgericht.de",
             "address": "bundesverfassungsgericht.de",
             "regions": ["Germany"],
             "types": ["Case Law"],
@@ -8,6 +9,7 @@
             "languages": ["German", "English"]
         },
         {
+            "label": "gesetze-im-internet.de",
             "address":"gesetze-im-internet.de",
             "regions": ["Germany"],
             "types": ["Legislation"],
@@ -15,6 +17,7 @@
             "languages": ["German"]
         },
         {
+            "label": "ris.bka.gv.at",
             "address": "ris.bka.gv.at",
             "regions": ["Austria"],
             "types": ["Legislation"],
@@ -22,6 +25,7 @@
             "languages": ["German"]
         },
         {
+            "label": "vwgh.gv.at",
             "address": "vwgh.gv.at ",
             "regions": ["Austria"],
             "types": ["Case Law"],
@@ -29,6 +33,7 @@
             "languages": ["German"]
         },
         {
+            "label": "admin.ch",
             "address": "admin.ch/opc",
             "regions": ["Switzerland"],
             "types": ["Legislation"],
@@ -36,6 +41,7 @@
             "languages": ["German"]
         },
         {
+            "label": "bger.ch",
             "address": "bger.ch",
             "regions": ["Switzerland"],
             "types": ["Case Law"],
@@ -43,6 +49,7 @@
             "languages": ["German"]
         },
         {
+            "label": "eur-lex.europa.eu",
             "address": "eur-lex.europa.eu",
             "regions": ["EU"],
             "types": ["Legislation"],
@@ -50,6 +57,7 @@
             "languages": ["German"]
         },
         {
+            "label": "curia.europa.eu",
             "address": "curia.europa.eu",
             "regions": ["EU"],
             "types": ["Case Law"],
@@ -57,6 +65,7 @@
             "languages": ["German"]
         },
         {
+            "label": "legislation.gov.uk",
             "address": "legislation.gov.uk",
             "regions": ["UK"],
             "types": ["Legislation"],
@@ -64,6 +73,7 @@
             "languages": ["English"]
         },
         {
+           "label": "bailii.org",
            "address": "bailii.org",
             "regions": ["UK"],
             "types": ["Case Law"],
@@ -71,6 +81,7 @@
             "languages": ["English"]
         },
         {
+            "label": "eurolawyer.at",
             "address": "eurolawyer.at",
             "regions": ["Austria"],
             "types": ["Literature"],
@@ -78,6 +89,7 @@
             "languages": ["German"]
         },
         {
+           "label": "zis-online.com",
            "address": "zis-online.com",
             "regions": ["Germany"],
             "types": ["Literature"],
@@ -85,6 +97,7 @@
             "languages": ["English"]
         },
          {
+           "label": "ouulj.law.ox.ac.uk",
            "address": "ouulj.law.ox.ac.uk",
             "regions": ["UK"],
             "types": ["Literature"],
@@ -92,13 +105,15 @@
             "languages": ["English"]
         },
          {
-           "address": "mdpi.com/journal/laws",
+           "label": "mdpi.com/journal/laws",
+             "address": "mdpi.com/journal/laws",
             "regions": ["Switzerland"],
             "types": ["Literature"],
             "tags": [],
             "languages": ["German"]
         },
          {
+           "label": "jurpc.de",
            "address": "jurpc.de",
             "regions": ["Germany"],
             "types": ["Literature"],
@@ -106,6 +121,7 @@
             "languages": ["German"]
         },
          {
+           "label": "jipitec.eu",
            "address": "jipitec.eu/issues",
             "regions": ["EU"],
             "types": ["Literature"],
@@ -113,13 +129,15 @@
             "languages": ["English"]
         },
          {
-           "address": "ifosslr.org/ifosslr/issue/archive",
+           "label": "ifosslr.org",
+             "address": "ifosslr.org/ifosslr/issue/archive",
             "regions": ["EU"],
             "types": ["Literature"],
             "tags": [],
             "languages": ["English"]
         },
          {
+           "label": "hrr-strafrecht.de",
            "address": "hrr-strafrecht.de/hrr/archiv",
             "regions": ["Germany", "EU"],
             "types": ["Literature"],
@@ -127,6 +145,7 @@
             "languages": ["English"]
         },
         {
+           "label": "ejls.eu",
            "address": "ejls.eu/",
             "regions": ["EU"],
             "types": ["Literature"],
@@ -134,6 +153,7 @@
             "languages": ["English"]
         },
         {
+           "label": "ejlt.org",
            "address": "ejlt.org",
             "regions": ["EU"],
             "types": ["Literature"],
@@ -141,6 +161,7 @@
             "languages": ["English"]
         },
         {
+           "label": "internet4jurists.at",
            "address": "internet4jurists.at",
             "regions": ["Austria"],
             "types": ["Literature"],
@@ -148,6 +169,7 @@
             "languages": ["English"]
         },
         {
+           "label": "warwick.ac.at",
            "address": "warwick.ac.at/fac/soc/law/elj",
             "regions": ["UK"],
             "types": ["Literature"],
@@ -155,6 +177,7 @@
             "languages": ["English"]
         },
         {
+           "label": "ejcl.org",
            "address": "ejcl.org",
             "regions": ["EU", "Netherlands"],
             "types": ["Literature"],
@@ -162,6 +185,7 @@
             "languages": ["English"]
         },
         {
+           "label": "amsterdamlawforum.org",
            "address": "amsterdamlawforum.org",
             "regions": ["Netherlands"],
             "types": ["Literature"],
@@ -169,6 +193,7 @@
             "languages": ["English"]
         },
         {
+           "label": "it-law.at",
            "address": "it-law.at/papers",
             "regions": ["Austria"],
             "types": ["Literature"],
@@ -176,6 +201,7 @@
             "languages": ["German"]
         },
          {
+           "label": "gojil.eu",
            "address": "gojil.eu",
             "regions": ["Germany", "EU"],
             "types": ["Literature"],
