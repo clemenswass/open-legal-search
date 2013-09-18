@@ -1,22 +1,22 @@
 {
     "sites": [
         {
-            "domain": "bundesverfassungsgericht.de",
+            "address": "bundesverfassungsgericht.de",
             "region": ["de"],
             "type": ["case_law"]
         },
         {
-            "domain": "ris.bka.gv.at",
+            "address": "ris.bka.gv.at",
             "region": ["at"],
             "type": ["legislation"]
         },
         {
-            "domain": "vwgh.gv.at ",
+            "address": "vwgh.gv.at ",
             "region": ["at"],
             "type": ["case_law"]
         },
         {
-            "domain": "admin.ch/opc",
+            "address": "admin.ch/opc",
             "region": ["ch"],
             "type": ["legislation"]
         }

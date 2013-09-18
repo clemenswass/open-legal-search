@@ -169,19 +169,21 @@
                 
                 console.log(matches);
                 
-                var domains = $.map(matches, function (site) {
-                    return 'site:' + site.domain; 
+                var addresses = $.map(matches, function (site) {
+                    return 'site:' + site.address; 
+                });
+                
                 var filetypes = [];
                 $('input[name="filetype"]:checked').each(function() {
                     filetypes.push('filetype:' + $(this).val());
                 });
                 
                 var element = google.search.cse.element.getElement('open-law-search');
-                element.execute($('#query').val() + ' ' + domains.join(' OR '));
+                element.execute($('#query').val() + ' ' + addresses.join(' OR ') + ' ' + filetypes.join(' OR '));
                 
-                $('#domain').empty();
+                $('#address').empty();
                 $.each(matches, function (i, site) {
-                    $('#domain').append('<li>' + site.domain + '</li>');
+                    $('#address').append('<li>' + site.address + '</li>');
                 });
             }
             
