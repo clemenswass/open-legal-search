@@ -61,8 +61,38 @@
             "type": ["literature"]
         },
          {
-           "address": "zis-online.com",
+           "address": "ouulj.law.ox.ac.uk",
+            "region": ["uk"],
+            "type": ["literature"]
+        },
+         {
+           "address": "mdpi.com/journal/laws",
+            "region": ["ch"],
+            "type": ["literature"]
+        },
+         {
+           "address": "jurpc.de",
             "region": ["de"],
+            "type": ["literature"]
+        },
+         {
+           "address": "jipitec.eu/issues",
+            "region": ["eu"],
+            "type": ["literature"]
+        },
+         {
+           "address": "ifosslr.org/ifosslr/issue/archive",
+            "region": ["eu"],
+            "type": ["literature"]
+        },
+         {
+           "address": "hrr-strafrecht.de/hrr/archiv",
+            "region": ["de", "eu"],
+            "type": ["literature"]
+        },
+         {
+           "address": "gojil.eu",
+            "region": ["de", "eu"],
             "type": ["literature"]
         }
     ]
