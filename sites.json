@@ -169,11 +169,27 @@
             "languages": ["English"]
         },
         {
-           "label": "warwick.ac.uk",
-           "address": "warwick.ac.uk/fac/soc/law/elj",
+           "label": "Warwick JILT",
+           "address": "warwick.ac.uk/fac/soc/law/elj/jilt",
             "regions": ["UK"],
             "types": ["Literature"],
-            "tags": [],
+            "tags": ["IT Law"],
+            "languages": ["English"]
+        },
+        {
+           "label": "Warwick LGD",
+           "address": "warwick.ac.uk/fac/soc/law/elj/lgd",
+            "regions": ["UK"],
+            "types": ["Literature"],
+            "tags": ["Social Justice"],
+            "languages": ["English"]
+        },
+        {
+           "label": "Warwick ESLJ",
+           "address": "warwick.ac.uk/fac/soc/law/elj/eslj",
+            "regions": ["UK"],
+            "types": ["Literature"],
+            "tags": ["Sport and Entertainment"],
             "languages": ["English"]
         },
         {
