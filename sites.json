@@ -54,6 +54,16 @@
             "address": "eurolawyer.at",
             "region": ["at"],
             "type": ["literature"]
+        },
+        {
+           "address": "zis-online.com",
+            "region": ["de"],
+            "type": ["literature"]
+        },
+         {
+           "address": "zis-online.com",
+            "region": ["de"],
+            "type": ["literature"]
         }
     ]
 }
