@@ -223,6 +223,14 @@
             "types": ["Literature"],
             "tags": ["International Law"],
             "languages": ["English"]
-        }
+        },
+         {
+           "label": "Google patents",
+           "address": "google.com/patents",
+            "regions": ["World"],
+            "types": ["Patent"],
+            "tags": ["Patent"],
+            "languages": ["English"]
+        },
     ]
 }
