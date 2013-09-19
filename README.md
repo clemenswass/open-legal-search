@@ -16,4 +16,4 @@ Todo
 - ~~Dynamic Regions/Types~~
 - Filter for Websites
 - Bookmarkable Search
-- Open/Close for Filters
+- high importantce Open/Close for Filters
